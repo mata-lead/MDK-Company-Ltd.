@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - MDK Company Ltd.</title>
+    <link rel="stylesheet" href="order.css">
+</head>       
+<body>
+    <header>
+        <div class="top-bar">
+            <span class="phone-number">+250 782 799 120</span>
+            <div class="language-selector">
+                <img src="flag.png" alt="flag icon" class="flag-icon">
+                <span>English</span>
+                <span class="dropdown-arrow">▼</span>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <img src="c:\Users\PC\Pictures\vd.png" alt="Logo">
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search here ...">
+                <button type="submit"><i class="search-icon">🔍</i></button>
+            </div>
+            <div class="icons">
+                <div class="icon"><i class="favorite-icon">❤️</i><span class="badge">0</span></div>
+                <div class="icon"><i class="user-icon">👤</i></div>
+                <div class="icon">
+                    <i class="cart-icon">🛒</i><span class="badge">0</span>
+                    <span class="cart-text">My cart RWF0</span>
+                </div>
+            </div>
+        
+        <nav>
+            <ul>
+                <li><a href="Untitled-1.html">Home</a></li>
+            <li><a href="home.html">Products</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="how it works.html">Workflow</a></li>
+            <li><a href="faq.html">FAQ</a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Order Section -->
+    <section class="order-section">
+        <h1>Order HP Printer Cartridges and Ink</h1>
+
+        <!-- Ink Cartridges Section -->
+        <h2>Ink Cartridges for Inkjet Printers</h2>
+        <div class="product-list">
+            <div class="product">
+                <h3>HP 63 / 63XL Ink Cartridge</h3>
+                <p>Compatible with HP DeskJet 1112, 2130, 3630 series; HP ENVY 4512, 4520 series.</p>
+                <label for="quantity-63">Quantity:</label>
+                <input type="number" id="quantity-63" name="quantity-63" min="1" value="1">
+            </div>
+            <div class="product">
+                <h3>HP 65 / 65XL Ink Cartridge</h3>
+                <p>Compatible with HP DeskJet 2622, 2636; HP ENVY 5055.</p>
+                <label for="quantity-65">Quantity:</label>
+                <input type="number" id="quantity-65" name="quantity-65" min="1" value="1">
+            </div>
+            <div class="product">
+                <h3>HP 67 / 67XL Ink Cartridge</h3>
+                <p>Compatible with HP DeskJet Plus 4155, HP ENVY Pro 6455.</p>
+                <label for="quantity-67">Quantity:</label>
+                <input type="number" id="quantity-67" name="quantity-67" min="1" value="1">
+            </div>
+            <!-- Additional cartridges as needed -->
+        </div>
+
+        <!-- Toner Cartridges Section -->
+        <h2>Toner Cartridges for LaserJet Printers</h2>
+        <div class="product-list">
+            <div class="product">
+                <h3>HP 12A Black Toner Cartridge</h3>
+                <p>Compatible with HP LaserJet 1010, 1012, 1020, 3050 series.</p>
+                <label for="quantity-12A">Quantity:</label>
+                <input type="number" id="quantity-12A" name="quantity-12A" min="1" value="1">
+            </div>
+            <div class="product">
+                <h3>HP 85A Black Toner Cartridge</h3>
+                <p>Compatible with HP LaserJet Pro M1132, P1102, M1212nf.</p>
+                <label for="quantity-85A">Quantity:</label>
+                <input type="number" id="quantity-85A" name="quantity-85A" min="1" value="1">
+            </div>
+            <div class="product">
+                <h3>HP 26A / 26X Black Toner Cartridge</h3>
+                <p>Compatible with HP LaserJet Pro M402, MFP M426.</p>
+                <label for="quantity-26A">Quantity:</label>
+                <input type="number" id="quantity-26A" name="quantity-26A" min="1" value="1">
+            </div>
+            <!-- Additional toner cartridges as needed -->
+        </div>
+    </section>
+     <!-- Chatbox Icon -->
+     <div class="chatbox-icon" onclick="toggleChat()">
+        <img src="chat-icon.png" alt="Chat Icon">
+    </div>
+
+    <!-- Chatbox Window -->
+    <div class="chatbox" id="chatbox">
+        <div class="chat-header">
+            <span>MDK Company Ltd. Chat</span>
+            <button onclick="toggleChat()">Close</button>
+        </div>
+        <div class="chat-content">
+            <p>Welcome to MDK Company Ltd.! How can we assist you today?</p>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message here..." />
+            <button>Send</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle the chatbox visibility
+        function toggleChat() {
+            var chatbox = document.getElementById("chatbox");
+            chatbox.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

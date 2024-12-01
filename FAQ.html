@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="FAQ.css">
+</head>
+<body> 
+    <header>
+    <div class="top-bar">
+        <span class="phone-number">+250 782 799 120</span>
+        <div class="language-selector">
+            <img src="flag.png" alt="flag icon" class="flag-icon">
+            <span>English</span>
+            <span class="dropdown-arrow">▼</span>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="c:\Users\PC\Pictures\vd.png" alt="Logo">
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search here ...">
+            <button type="submit"><i class="search-icon">🔍</i></button>
+        </div>
+        <div class="icons">
+            <div class="icon"><i class="favorite-icon">❤️</i><span class="badge">0</span></div>
+            <div class="icon"><i class="user-icon">👤</i></div>
+            <div class="icon">
+                <i class="cart-icon">🛒</i><span class="badge">0</span>
+                <span class="cart-text">My cart RWF0</span>
+            </div>
+        </div>
+    
+    <nav>
+        <ul>
+            <li><a href="Untitled-1.html">Home</a></li>
+        <li><a href="home.html">Products</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="how it works.html">Workflow</a></li>
+        <li><a href="faq.html">FAQ</a>
+        </ul>
+    </nav>
+</header>
+
+    <!-- FAQ Section -->
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <h2 onclick="toggleAnswer(this)">What is MDK Company Limited?</h2>
+            <p>MDK Company Limited is a trusted provider of high-quality products, specializing in ink cartridges and other office supplies.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 onclick="toggleAnswer(this)">What are your shipping options?</h2>
+            <p>We offer several shipping options, including standard, express, and same-day delivery, depending on your location.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 onclick="toggleAnswer(this)">Do you offer customer support?</h2>
+            <p>Yes, our customer support team is available 24/7 to assist you with any inquiries or concerns.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 onclick="toggleAnswer(this)">How can I track my order?</h2>
+            <p>Once your order is shipped, we provide a tracking link via email to monitor the status of your delivery.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h2 onclick="toggleAnswer(this)">What payment methods do you accept?</h2>
+            <p>We accept all major credit cards, PayPal, and bank transfers for your convenience.</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript function to toggle the answer visibility
+        function toggleAnswer(element) {
+            // Toggle the 'active' class on the clicked question's container
+            element.parentNode.classList.toggle("active");
+        }
+    </script>
+     <!-- Chatbox Icon -->
+     <div class="chatbox-icon" onclick="toggleChat()">
+        <img src="chat-icon.png" alt="Chat Icon">
+    </div>
+
+    <!-- Chatbox Window -->
+    <div class="chatbox" id="chatbox">
+        <div class="chat-header">
+            <span>MDK Company Ltd. Chat</span>
+            <button onclick="toggleChat()">Close</button>
+        </div>
+        <div class="chat-content">
+            <p>Welcome to MDK Company Ltd.! How can we assist you today?</p>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message here..." />
+            <button>Send</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle the chatbox visibility
+        function toggleChat() {
+            var chatbox = document.getElementById("chatbox");
+            chatbox.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

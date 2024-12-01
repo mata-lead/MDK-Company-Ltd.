@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDK Company Ltd. - Workflow</title>
+    <link rel="stylesheet" href="how it works.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span class="phone-number">+250 782 799 120</span>
+            <div class="language-selector">
+                <img src="flag.png" alt="flag icon" class="flag-icon">
+                <span>English</span>
+                <span class="dropdown-arrow">▼</span>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <img src="c:\Users\PC\Pictures\vd.png" alt="Logo">
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search here ...">
+                <button type="submit"><i class="search-icon">🔍</i></button>
+            </div>
+            <div class="icons">
+                <div class="icon"><i class="favorite-icon">❤️</i><span class="badge">0</span></div>
+                <div class="icon"><i class="user-icon">👤</i></div>
+                <div class="icon">
+                    <i class="cart-icon">🛒</i><span class="badge">0</span>
+                    <span class="cart-text">My cart RWF0</span>
+                </div>
+            </div>
+        
+        <nav>
+            <ul>
+                <li><a href="Untitled-1.html">Home</a></li>
+            <li><a href="home.html">Products</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="how it works.html">Workflow</a></li>
+            <li><a href="faq.html">FAQ</a>
+            </ul>
+        </nav>
+    </header>
+   
+    <!-- Workflow Section -->
+    <section class="workflow section">
+        <h1>Workflow</h1>
+        <p>At MDK Company Ltd., we strive to provide a seamless experience for our customers. Here’s how our process works:</p>
+        
+        <h2>Step 1: Select Your Product</h2>
+        <p>Browse our extensive range of products and select the ones that meet your needs.</p>
+
+        <h2>Step 2: Place Your Order</h2>
+        <p>Fill out the order form and provide necessary details. Our team will review your order.</p>
+
+        <h2>Step 3: Confirmation</h2>
+        <p>You will receive a confirmation email with your order details and estimated delivery time.</p>
+
+        <h2>Step 4: Delivery</h2>
+        <p>Your products will be delivered to your specified address. Enjoy your purchase!</p>
+    </section>
+
+    <!-- Chatbox Icon -->
+    <div class="chatbox-icon" onclick="toggleChat()">
+        <img src="chat-icon.png" alt="Chat Icon">
+    </div>
+
+    <!-- Chatbox Window -->
+    <div class="chatbox" id="chatbox">
+        <div class="chat-header">
+            <span>MDK Company Ltd. Chat</span>
+            <button onclick="toggleChat()">Close</button>
+        </div>
+        <div class="chat-content">
+            <p>Welcome to MDK Company Ltd.! How can we assist you today?</p>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message here..." />
+            <button>Send</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle the chatbox visibility
+        function toggleChat() {
+            var chatbox = document.getElementById("chatbox");
+            chatbox.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

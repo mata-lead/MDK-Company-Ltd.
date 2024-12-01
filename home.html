@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDK Company Ltd. - Products</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span class="phone-number">+250 782 799 120</span>
+            <div class="language-selector">
+                <img src="flag.png" alt="flag icon" class="flag-icon">
+                <span>English</span>
+                <span class="dropdown-arrow">▼</span>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <img src="c:\Users\PC\Pictures\vd.png" alt="Logo">
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search here ...">
+                <button type="submit"><i class="search-icon">🔍</i></button>
+            </div>
+            <div class="icons">
+                <div class="icon"><i class="favorite-icon">❤️</i><span class="badge">0</span></div>
+                <div class="icon"><i class="user-icon">👤</i></div>
+                <div class="icon">
+                    <i class="cart-icon">🛒</i><span class="badge">0</span>
+                    <span class="cart-text">My cart RWF0</span>
+                </div>
+            </div>
+        
+        <nav>
+            <ul>
+                <li><a href="Untitled-1.html">Home</a></li>
+            <li><a href="home.html">Products</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="how it works.html">Workflow</a></li>
+            <li><a href="faq.html">FAQ</a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <h1>Our Products</h1>
+        <div class="product-list">
+            <!-- Sample Product 1 -->
+            <div class="product-item">
+                <img src="c:\Users\PC\Pictures\Camera Roll\21.jpg" alt="HP Cartridge Model 1">
+                <h2>HP Cartridge Model 1</h2>
+                <p>High-quality ink for reliable printing. Suitable for various HP printer models.</p>
+                <p class="price">$45.99</p>
+            </div>
+
+            <!-- Sample Product 2 -->
+            <div class="product-item">
+                <img src="c:\Users\PC\Downloads\HP 204A Black, Cyan, Magenta, Yellow Toner Cartridges - Google Search_files\41U5BqPcE4L._AC_.jpg" alt="HP Cartridge Model 2">
+                <h2>HP Cartridge Model 2</h2>
+                <p>Perfect for everyday printing with high page yield. Crisp and clear prints.</p>
+                <p class="price">$39.99</p>
+            </div>
+
+            <!-- Sample Product 2 -->
+            <div class="product-item">
+                <img src="c:\Users\PC\Downloads\HP Black, Cyan, Magenta, Yellow ink - Google Search_files\DM_20240625110132_001.jpg" alt="HP Cartridge Model 2">
+                <h2>HP Cartridge Model 2</h2>
+                <p>Perfect for everyday printing with high page yield. Crisp and clear prints.</p>
+                <p class="price">$39.99</p>
+            </div>
+
+            <!-- Sample Product 2 -->
+            <div class="product-item">
+                <img src="c:\Users\PC\Pictures\me.jpg" alt="HP Cartridge Model 2">
+                <h2>HP Cartridge Model 2</h2>
+                <p>Perfect for everyday printing with high page yield. Crisp and clear prints.</p>
+                <p class="price">$39.99</p>
+            </div>
+
+            <!-- Sample Product 2 -->
+            <div class="product-item">
+                <img src="c:\Users\PC\Pictures\Camera Roll\41.jpg" alt="HP Cartridge Model 2">
+                <h2>HP Cartridge Model 2</h2>
+                <p>Perfect for everyday printing with high page yield. Crisp and clear prints.</p>
+                <p class="price">$39.99</p>
+            </div>
+
+            <!-- Sample Product 2 -->
+            <div class="product-item">
+                <img src="c:\Users\PC\Pictures\Camera Roll\x.jpg" alt="HP Cartridge Model 2">
+                <h2>HP Cartridge Model 2</h2>
+                <p>Perfect for everyday printing with high page yield. Crisp and clear prints.</p>
+                <p class="price">$39.99</p>
+            </div>
+
+            <!-- Sample Product 2 -->
+            <div class="product-item">
+                <img src="c:\Users\PC\Pictures\Camera Roll\48.jpg" alt="HP Cartridge Model 2">
+                <h2>HP Cartridge Model 2</h2>
+                <p>Perfect for everyday printing with high page yield. Crisp and clear prints.</p>
+                <p class="price">$39.99</p>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+  <!-- Chatbox Icon -->
+  <div class="chatbox-icon" onclick="toggleChat()">
+    <img src="chat-icon.png" alt="Chat Icon">
+</div>
+
+<!-- Chatbox Window -->
+<div class="chatbox" id="chatbox">
+    <div class="chat-header">
+        <span>MDK Company Ltd. Chat</span>
+        <button onclick="toggleChat()">Close</button>
+    </div>
+    <div class="chat-content">
+        <p>Welcome to MDK Company Ltd.! How can we assist you today?</p>
+    </div>
+    <div class="chat-input">
+        <input type="text" placeholder="Type your message here..." />
+        <button>Send</button>
+    </div>
+</div>
+
+<script>
+    // JavaScript to toggle the chatbox visibility
+    function toggleChat() {
+        var chatbox = document.getElementById("chatbox");
+        chatbox.classList.toggle("active");
+    }
+</script>
+</body>
+</html>
