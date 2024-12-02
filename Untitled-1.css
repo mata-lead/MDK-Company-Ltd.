@@ -26,22 +26,50 @@ body, h2, h3, p, a, button, ul, li {
     color: #555;
   }
   
-  .language-selector {
-    padding: 5px;
-  }
+ /* General Reset (your existing reset styles remain unchanged) */
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon .badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ff0000;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+.icon .cart-text {
+  font-size: 14px;
+  margin-left: 5px;
+}
   
   .header-main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #003366;
+    background-color: #ffffff;
     padding: 10px 20px;
     z-index: 2;
     position: relative;
   }
   
   .logo {
-    height: 50px;
+    width: 100px;
   }
   
   .search-bar {
@@ -60,7 +88,7 @@ body, h2, h3, p, a, button, ul, li {
   }
   
   .navigation {
-    background-color: #0056b3;
+    background-color: #2a69ac;
     display: flex;
     padding: 10px;
     gap: 15px;
@@ -81,7 +109,7 @@ body, h2, h3, p, a, button, ul, li {
     padding: 15px;
     border-right: 1px solid #ddd;
     position: absolute;
-    top: 120px;
+    top: 195px;
     left: 0;
     height: calc(100% - 120px);
     z-index: 1; /* Ensures it stays below the navigation bar */
@@ -158,33 +186,65 @@ body {
   
   /* Style for prev/next buttons */
 a.prev, a.next {
-    position: absolute;
-    top: 50%;
-    padding: 16px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    cursor: pointer;
-    user-select: none;
-    z-index: 1;
-    transition: 0.3s ease;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  padding: 10px 14px; /* Reduced padding for smaller size */
+  color: white;
+  font-size: 18px; /* Reduced font size */
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1;
+  transition: 0.3s ease;
+  transform: translateY(-50%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Move the Prev button to the far right */
+a.prev {
+    left: 290px; /* Remove the left positioning */
+}
+
+/* Adjust position for Next button */
+a.next {
+  right: 14px; /* Slightly adjusted position for the next button */
+}
+
+/* Hover effect for both buttons */
+a.prev:hover, a.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%) scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Larger shadow on hover */
+}
+
+/* Focus effect for accessibility */
+a.prev:focus, a.next:focus {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+/* Add some animation */
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(-50%) scale(0.8);
   }
-  
-  a.prev {
-    left: 282px; /* Adjust this value to place the Prev button next to the sidebar */
+  to {
+      opacity: 1;
+      transform: translateY(-50%) scale(1);
   }
-  
-  a.next {
-    right: 0;
-  }
-  
-  a.prev:hover, a.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
+}
+
+a.prev, a.next {
+  animation: slideIn 0.5s ease-out;
+}
+
   
   
   /* Brands */
