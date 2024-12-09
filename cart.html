@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDK Company Limited - Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <span class="contact-info">📞 +250 788 773 640</span>
+      <div class="right-section">
+        <div class="icons">
+          <div class="icon"><a href="login.html"><i class="user-icon">👤</i></a></div>
+          <div class="icon">
+            <i class="cart-icon">🛒</i>
+            <span class="cart-text">My cart <span id="cart-count">0</span> items - RWF <span id="cart-total">0</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-main">
+      <img src="logo.png" alt="MDK Logo" class="logo">
+    </div>
+  </header>
+
+  <section class="cart">
+    <h2>Your Shopping Cart</h2>
+    <div id="cart-items">
+      <!-- Cart items will be listed here -->
+    </div>
+    <div id="cart-summary">
+      <p>Total: RWF <span id="cart-total-price">0</span></p>
+      <button onclick="checkout()">Proceed to Checkout</button>
+    </div>
+  </section>
+
+  <script src="cart.js"></script>
+</body>
+</html>
